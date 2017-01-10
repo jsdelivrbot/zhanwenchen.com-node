@@ -76,5 +76,45 @@ router.get('/zhanwenchen.com', function(req, res){
   });
 });
 
+router.get('/jsPsych', function(req, res){
+  res.render('jsPsych', {
+    title: 'jsPsych'
+  });
+});
+
+router.get('/chat', function(req, res){
+  res.render('chat', {
+    title: 'Chat'
+  });
+});
+
+router.get('/todo', function(req, res){
+  res.render('todo', {
+    title: 'To-Do'
+  });
+});
+
+router.get('/SimulatedReality', function(req, res){
+  res.render('SimulatedReality', {
+    title: 'SimulatedReality'
+  });
+});
+
+router.get('/TrainStream', function(req, res){
+  res.render('TrainStream', {
+    title: 'TrainStream'
+  });
+});
+
+router.get('/RoadJams', function(req, res){
+  res.render('RoadJams', {
+    title: 'RoadJams'
+  });
+});
+
+
+/////////////////////////////////////
+// EXPORTS
+/////////////////////////////////////
 
 module.exports = router;

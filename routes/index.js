@@ -112,6 +112,11 @@ router.get('/RoadJams', function(req, res){
   });
 });
 
+router.get('/resume', function(req, res){
+  res.render('resume', {
+  });
+});
+
 
 /////////////////////////////////////
 // EXPORTS

@@ -3,3 +3,6 @@
 nodemon-ignore
 node_modules
 *.swp
+server.csr
+server.key
+server.pass.key

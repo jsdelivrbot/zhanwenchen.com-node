@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  | &nbsp
+  div
+    div(style='float:left')
+      a(href='concerto'): img(src= "images/concerto.png")
+      br
+      a(href='concerto')
+        p Piano Concerto
+
+    div(style='float:right')
+      a(href='schumann-trio'): img(src= "images/schumann-trio.png")
+      br
+      a(href='schumann-trio')
+        p Schumann Piano Trio No.3
+
+    div(style='clear:both')

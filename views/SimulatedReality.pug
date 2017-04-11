@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h1= title
+  | &nbsp
+  p I co-created an Arduino batting robot with&nbsp
+    a(href='http://www.alexlambert.com/') Alex Lambert
+    |  at MHacks8 in Oct 2016.
+
+  p This robot uses simulated training data (pre-trained on a
+    | laptop) to hit incoming objects at the optimal time. In terms of software,
+    | this project uses the&nbsp
+    a(href='http://www.alexlambert.com/') MABE
+    |  Evolutionary Neural Networks library (implemented in C++) and the Arduino
+    | SDK. Hardware-wise, the robot features a single Arduino Uno board
+    | connected to a Servo motor (which is in turn connected to
+    | a 3D-printed "bat") and an ultrasonic ranger as the distance sensor.
+
+  p We attempted to integrate this project in the ROS platform. However, due to
+    | system compatibility issues, time ran out before we could successfully
+    | compile the code. However, we had an MVP: a hard-coded "AI" and were
+    | very close to our objective.
+
+  p
+    a(href='https://github.com/zhanwenchen/MHacks216')
+      | View Source Code on Github
+    br
+    a(href='https://devpost.com/software/simulated-reality')
+      | View Project on DevPost
